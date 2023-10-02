@@ -1,0 +1,385 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #5B9A8B;
+}
+
+.navbar {
+    padding: 2rem;
+    background-color: #252B48;
+
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
+.logo {
+    height: 60px;
+
+}
+
+.nav-link {
+    color: #5B9A8B;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-family: 'Lilita One', sans-serif;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 255, 0, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Lilita One";
+    font-weight: 100;
+    letter-spacing: 2px;
+    background-color: #252B48;
+    color: #fff;
+}
+
+.divider {
+    width: 100vw;
+    height: 100px;
+}
+
+.slider {
+    width: 100%;
+    height: 600px;
+}
+
+.carousel-item h5 {
+    color: #00DFA2;
+    
+    font-size: 4rem;
+    font-weight: 900;
+}
+.carousel-item p {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+
+
+.hot-product h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Lilita One";
+    font-weight: 100;
+    letter-spacing: 2px;
+    background-color: #252B48;
+    color: #fff;
+}
+
+.gallery-item {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 2px solid #252B48;
+    border-radius: 8px;
+    padding: 10px;
+}
+.gallery-item:hover {
+    transform: scale(1,1.1);
+    box-shadow: 11px 10px 12px -4px rgba(0,0,0,0.75);
+}
+.gallery-item a {
+    text-decoration: none;
+    color: #252B48;
+}
+
+.row {
+    background-color: #fff;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.txt-img {
+    border-top: 1px solid #252B48;
+    padding: 5px;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.gallery-item a:hover {
+    color: #00DFA2;
+    cursor: pointer;
+    
+
+}
+
+.scroll-to-top {
+
+    float: right;
+    border-top-left-radius: 20px;
+    background-color: #252B48;
+}
+
+
+.footer {
+    height: 300px;
+    background-color: #252B48;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 80px 50px;
+}
+
+.nav-product {
+    text-align: center;
+    background-color: #252B48;
+}
+
+.nav-product ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 7px;
+
+}
+
+.nav-product ul li a {
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-family: sans-serif;
+}
+
+.shop {
+    background-color: #fff;
+    text-align: center;
+}
+
+.shop h2 {
+    font-size: 2rem;
+    font-family: 'AR One Sans', sans-serif;
+    color: #5B9A8B;
+    letter-spacing: 5px;
+    text-shadow: 3px 3px 0px #ccc;
+
+}
+
+.shop-item {
+    margin: 20px 30px;
+    padding: 20px;
+    display: inline-block;
+    border: 1px solid #252B48;
+    text-align: center;
+}
+.shop-item:hover {
+    box-shadow: 11px 10px 12px -4px rgba(0,0,0,0.75);
+}
+
+.shop-txt {
+    border-top: 1px solid #252B48;
+    text-align: left;
+    
+}
+
+.shop-icon {
+    text-align: right;
+   
+}
+
+
+.container-news {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.news {
+    display: inline-block;
+    border: 5px solid #252B48;
+    margin-right: 20px;
+    margin-top: 40px;
+    border-radius: 0 0px 10px 10px;
+
+}
+
+.description-news {
+    text-align: justify;
+    margin-left: 5px;
+    font-size: 20px;
+    font-style: italic;
+    border-top: 2px solid #252B48;
+}
+
+.title-news h3 {
+    font-family: "Lilita One", sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
+    color: black;
+
+}
+
+.about-img {
+    text-align: center;
+}
+
+.about-img img {
+    border: 20px solid #252B48;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.about-container,
+.how-container {
+    width: 80%;
+    background-color: #252B48;
+    margin: 0 auto;
+    border-radius: 25px;
+    padding: 50px;
+}
+
+
+
+.about-container p,
+.how-container p {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2;
+    padding-left: 50px;
+    font-weight: 900;
+    color: #BAD1C2;
+}
+
+
+.how-container h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Lilita One";
+    font-weight: 100;
+    letter-spacing: 2px;
+    background-color: #252B48;
+    color: #fff;
+}
+
+.how-container a {
+    color: #33BBC5;
+}
+
+#whatsapp {
+
+    width: 75%;
+    margin: 0 auto;
+    background-color: #252B48;
+    text-align: center;
+    border-radius: 30px;
+}
+
+#whatsapp h3 {
+    font-size: 2rem;
+    padding: 10px;
+    color: #fff;
+}
+
+#form {
+
+    width: 75%;
+    margin: 0 auto;
+    background-color: #252B48;
+    border-radius: 30px;
+    padding: 30px;
+
+
+}
+
+label {
+    font-size: 1rem;
+    color: #fff;
+    font-family: sans-serif;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+#form h3 {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+.border-divider {
+    border-left: 3px solid #252B48; 
+    padding-left: 20px;
+    
+}
+
+@media screen and (max-width: 767px) {
+    .border-divider {
+        border-top: 3px solid #252B48;
+        border-left: none;
+    }
+}
+
+.shop-box {
+    box-shadow: 7px 7px 15px -3px rgba(0,0,0,0.75);
+}
+.title-product {
+    border-bottom: 2px solid #252B48;
+    padding-bottom: 10px;
+   text-align: center;
+}
+.price {
+    font-size: 3rem;
+    padding-top: 20px;
+    color: #252B48;
+}
+.icon-small {
+    width: 40px; 
+    height: 40px;
+    margin-right: 10px;
+}
+
+.boton-shop {
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #252B48;
+    background-color: #00DFA2;
+    border: #00DFA2;
+    border:1px solid transparent; 
+   
+}
