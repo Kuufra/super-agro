@@ -144,16 +144,11 @@ h1 {
 }
 
 
-.footer {
-    height: 300px;
+.footer-color {
     background-color: #252B48;
-    margin-top: 80px;
-    text-align: center;
 }
-
-.footer ul li {
-    display: inline-block;
-    margin: 80px 0px;
+.iconos-redes {
+    color: #fff;
 }
 
 
