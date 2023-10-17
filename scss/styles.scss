@@ -1,0 +1,467 @@
+@import '../scss/base/vars';
+@import '../scss/base/maps';
+@import '../scss/base/extend';
+@import '../scss/base/mixin';
+@import '../scss/componentes/navbar';
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: $bg-color;
+}
+
+.logo {
+    height: 60px;
+
+}
+
+h1 {
+    @extend %titulos;
+}
+
+.divider {
+    @extend %divider;
+}
+
+.carousel-item {
+    h5 {
+        color: $secondary;
+        font-size: map-get($t-letra, XXL);
+        font-weight: 900;
+    }
+
+    .slider {
+        width: 100%;
+        height: 600px;
+    }
+
+    p {
+        font-size: map-get($t-letra , M);
+        font-weight: 700;
+    }
+}
+
+.hot-product {
+    h2 {
+        @extend %titulos;
+    }
+
+    .gallery-item {
+        display: inline-block;
+        margin-right: 20px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        border: 2px solid $primary;
+        border-radius: 8px;
+        padding: 10px;
+
+        &:hover {
+            transform: scale(1, 1.1);
+            box-shadow: $sombra-xl;
+        }
+
+        a {
+            text-decoration: none;
+            color: $primary;
+
+            &:hover {
+                color: $secondary;
+            }
+        }
+
+        .txt-img {
+            border-top: 1px solid $primary;
+            padding: 5px;
+            font-size: map-get($t-letra, M);
+            font-family: $font-secundary;
+            font-weight: bold;
+        }
+    }
+}
+
+.row {
+    background-color: $blanco;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.scroll-to-top {
+    float: right;
+
+    img {
+        width: 40px;
+    }
+}
+
+.divider-small {
+    @extend %divider-small;
+}
+
+footer {
+    .footer-color {
+        background-color: $primary;
+    }
+
+    .iconos-redes {
+        color: $blanco;
+    }
+}
+
+.nav-product {
+    text-align: center;
+    background-color: $primary;
+
+    ul {
+
+        li {
+            display: inline-block;
+            line-height: 4rem;
+            margin: 0 7px;
+
+            a {
+                @include textos (map-get($t-letra, S), $font-secundary, $blanco);
+                padding: 7px 13px;
+                border-radius: 3px;
+            }
+        }
+    }
+}
+
+.shop {
+    background-color: $blanco;
+    text-align: center;
+
+    h2 {
+        @include textos (map-get($t-letra, L), 'AR One Sans', $bg-color);
+        letter-spacing: 5px;
+        text-shadow: 3px 3px 0px #ccc;
+    }
+
+    .shop-item {
+        margin: 20px 30px;
+        padding: 20px;
+        display: inline-block;
+        border: 1px solid $primary;
+        text-align: center;
+
+        &:hover {
+            box-shadow: $sombra-xl;
+        }
+
+        .shop-txt {
+            border-top: 1px solid $primary;
+            text-align: left;
+        }
+
+        .shop-icon {
+            text-align: right;
+
+            &:hover {
+                .msg-buy {
+                    display: inline-block
+                }
+            }
+
+            .msg-buy {
+                font-size: map-get($t-letra , S);
+                color: $secondary;
+                font-weight: bold;
+                display: none;
+            }
+        }
+    }
+}
+
+.container-news {
+
+    margin: 0 auto;
+    text-align: center;
+
+    .row-modify {
+        background-color: $bg-color;
+    }
+
+    .news {
+        display: inline-block;
+        border: 5px solid $primary;
+        margin-right: 20px;
+        margin-top: 40px;
+        border-radius: 0 0px 10px 10px;
+
+        .description-news {
+            text-align: justify;
+            margin-left: 5px;
+            font-size: map-get($t-letra, S);
+            font-style: italic;
+            border-top: 2px solid $primary;
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+
+        h3 {
+            @include textos (map-get($t-letra, M), $font-primary, $negro);
+            font-weight: lighter;
+
+            &:hover {
+                color: $secondary;
+
+            }
+
+        }
+    }
+
+}
+
+.about-img {
+    text-align: center;
+
+    img {
+        border: 20px solid $primary;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+
+        @media screen and (max-width: 767px) {
+            width: 50%;
+            border: 10px solid #252B48;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+    }
+}
+
+.about-container {
+    @extend %contenedor-about;
+
+    p {
+        @extend %texto-about;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 10px;
+
+        p {
+            font-size: map-get($t-letra, S);
+            line-height: 1;
+            padding-left: 5px;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: map-get($t-letra, M);
+        }
+    }
+}
+
+.how-container {
+    @extend %contenedor-about;
+
+    p {
+        @extend %texto-about;
+    }
+
+    h2 {
+        @extend %titulos;
+    }
+
+    a {
+        color: $secondary;
+        text-decoration: none;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 10px;
+
+        p {
+            font-size: map-get($t-letra, S);
+            line-height: 1;
+            padding-left: 5px;
+            font-weight: 600;
+        }
+
+        h2 {
+            font-size: map-get($t-letra, M);
+        }
+    }
+}
+
+#whatsapp {
+    @extend %contenedor-contacto;
+
+    h3 {
+        font-size: map-get($t-letra, L);
+        padding: 10px;
+        color: $blanco;
+    }
+
+    @media screen and (max-width: 767px) {
+        .whats-img {
+            width: 200px
+        }
+    }
+}
+
+#form {
+    @extend %contenedor-contacto;
+    padding: 1.5rem;
+
+    label {
+        @include textos (1rem, $font-secundary, $blanco);
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+
+    button[type="submit"] {
+        background-color: $secondary;
+        color: $primary;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $negro;
+            color: $secondary;
+        }
+    }
+
+    h3 {
+        font-size: map-get($t-letra, L);
+        color: $blanco;
+        text-align: center;
+    }
+}
+
+.category {
+    margin-left: 10px;
+
+    a {
+        color: $primary;
+        text-decoration: none;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 900;
+        text-shadow: 1px 1px 0px $blanco;
+
+        &:hover {
+            color: $blanco;
+            text-shadow: 3px 3px 0px $primary;
+        }
+    }
+}
+
+.shop-box {
+    box-shadow: $sombra;
+
+    .title-product {
+        border-bottom: 2px solid $primary;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .mini-img {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            border: 1px solid $primary;
+            border-radius: 5px;
+
+            &:hover {
+                transform: scale(1, 1.1);
+                box-shadow: 7px 7px 15px -3px rgba(0, 0, 0, 0.75);
+            }
+        }
+    }
+
+    .border-divider {
+        border-left: 3px solid #252B48;
+        padding-left: 20px;
+
+        p {
+            color: $secondary;
+            font-weight: 600;
+            padding-top: 10px;
+            padding-right: 10px;
+        }
+
+        .price {
+            font-size: map-get($t-letra, XXL);
+            padding-top: 1rem;
+            color: $primary;
+        }
+
+        .boton-shop {
+            margin-bottom: 30px;
+            font-weight: bold;
+            color: $primary;
+            background-color: $secondary;
+            border: $secondary;
+            border: 1px solid transparent;
+
+            &:hover {
+                background-color: $primary;
+                color: $secondary
+            }
+
+        }
+
+        .icon-small {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        @media screen and (max-width: 767px) {
+            border-top: 3px solid #252B48;
+            border-left: none;
+
+        }
+    }
+
+
+}
+
+.boton-pag {
+    background-color: #252B48;
+    color: #fff;
+}
+
+.article-news {
+    padding-top: 1.5rem;
+    border-radius: 10px;
+
+    img {
+        border-top-right-radius: 10px;
+        margin-right: 10px;
+    }
+
+    h3 {
+        font-weight: bold;
+    }
+
+    p {
+        text-align: justify;
+    }
+}

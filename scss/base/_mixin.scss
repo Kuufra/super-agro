@@ -1,0 +1,5 @@
+@mixin textos ($f-z, $f-f, $f-c) {
+    font-size: $f-z;
+    font-family: $f-f;
+    color: $f-c;
+}
