@@ -158,12 +158,19 @@ footer .iconos-redes {
   line-height: 4rem;
   margin: 0 7px;
 }
+@media screen and (max-width: 767px) {
+  .nav-product ul li {
+    display: block;
+  }
+}
 .nav-product ul li a {
   font-size: 1rem;
   font-family: "AR One Sans";
   color: #fff;
   padding: 7px 13px;
   border-radius: 3px;
+  text-decoration: none;
+  color: #fff;
 }
 
 .shop {

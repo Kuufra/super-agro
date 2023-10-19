@@ -128,10 +128,17 @@ footer {
             line-height: 4rem;
             margin: 0 7px;
 
+            @media screen and (max-width: 767px) {
+                display: block;
+            }
+
             a {
                 @include textos (map-get($t-letra, S), $font-secundary, $blanco);
                 padding: 7px 13px;
                 border-radius: 3px;
+                text-decoration: none;
+                color: $blanco;
+
             }
         }
     }
