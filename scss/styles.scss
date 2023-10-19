@@ -1,10 +1,3 @@
-@import '../scss/base/vars';
-@import '../scss/base/maps';
-@import '../scss/base/extend';
-@import '../scss/base/mixin';
-@import '../scss/componentes/navbar';
-
-
 * {
     padding: 0;
     margin: 0;
@@ -13,8 +6,18 @@
     list-style: none;
 }
 
+@import '../scss/base/vars';
+@import '../scss/base/maps';
+@import '../scss/base/extend';
+@import '../scss/base/mixin';
+@import '../scss/componentes/navbar';
+
+
+
+
 body {
     background-color: $bg-color;
+    overflow-x: hidden;
 }
 
 .logo {
@@ -150,18 +153,21 @@ footer {
         display: inline-block;
         border: 1px solid $primary;
         text-align: center;
-        
+
         &:hover {
             box-shadow: $sombra-xl;
         }
+
         a {
             text-decoration: none;
             color: $primary;
+
             span {
                 font-weight: bold;
                 letter-spacing: 1px;
             }
         }
+
         .shop-txt {
             border-top: 1px solid $primary;
             text-align: left;
