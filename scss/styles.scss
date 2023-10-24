@@ -66,8 +66,9 @@ h1 {
         padding: 10px;
 
         &:hover {
-            transform: scale(1, 1.1);
+            transform: scale(1.05);
             box-shadow: $sombra-xl;
+            transition: 200ms;
         }
 
         a {
@@ -75,7 +76,7 @@ h1 {
             color: $primary;
 
             &:hover {
-                color: $secondary;
+                color: $negro;
             }
         }
 

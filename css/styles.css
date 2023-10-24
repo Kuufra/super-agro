@@ -111,15 +111,16 @@ body {
   padding: 10px;
 }
 .hot-product .gallery-item:hover {
-  transform: scale(1, 1.1);
+  transform: scale(1.05);
   box-shadow: 11px 10px 12px -4px rgba(0, 0, 0, 0.75);
+  transition: 200ms;
 }
 .hot-product .gallery-item a {
   text-decoration: none;
   color: #252B48;
 }
 .hot-product .gallery-item a:hover {
-  color: #00DFA2;
+  color: #000;
 }
 .hot-product .gallery-item .txt-img {
   border-top: 1px solid #252B48;
