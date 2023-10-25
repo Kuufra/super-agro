@@ -17,7 +17,7 @@
 
 body {
     background-color: $bg-color;
-    overflow-x: hidden;
+
 }
 
 .logo {
@@ -112,6 +112,9 @@ h1 {
 footer {
     .footer-color {
         background-color: $primary;
+        text-align: center;
+        width: 100%;
+        --bs-gutter-x: 0; /*tenia un scroll horizontal en la web y era por algo de bootstrap con esto lo corregi */
     }
 
     .iconos-redes {

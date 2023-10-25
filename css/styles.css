@@ -80,7 +80,6 @@ header .navbar .navbar-toggler-icon {
 
 body {
   background-color: #5B9A8B;
-  overflow-x: hidden;
 }
 
 .logo {
@@ -146,6 +145,9 @@ body {
 
 footer .footer-color {
   background-color: #252B48;
+  text-align: center;
+  width: 100%;
+  --bs-gutter-x: 0; /*tenia un scroll horizontal en la web y era por algo de bootstrap con esto lo corregi */
 }
 footer .iconos-redes {
   color: #fff;
